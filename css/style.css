@@ -1,0 +1,119 @@
+:root {
+    --dark-color: #1c1c1c;
+    --light-color: #ffffff;
+    --dark-grey-color: #333333;
+    --light-grey-color: #efefef;
+}
+body {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+    letter-spacing: .05rem;
+}
+
+h1 {
+    font-weight: 200;
+}
+
+.bg-light-grey {
+    background-color: var(--light-grey-color);
+}
+
+.display-2, .lead, small {
+    font-weight: 200;
+}
+
+.lead {
+    font-size: 1.8rem;
+}
+
+a {
+    color: var(--light-color);
+}
+
+a:hover {
+    color: var(--light-color);
+    opacity: .9;
+}
+
+.btn-primary {
+    background-color: var(--dark-color);
+    display: inline-block;
+}
+
+.btn-content {
+    padding: 1.2rem 1.5rem;
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    background-color: var(--dark-color);
+    opacity: .9;
+    text-decoration: none;
+}
+
+.bg-grey {
+    background-color: var(--dark-grey-color);
+}
+
+.navbar {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    min-height: 80px;
+}
+
+.nav-link {
+    color: #ffffff;
+}
+
+#hero {
+    max-height: 700px;
+}
+
+.hero {
+    background-image: url('../images/hero.jpg');
+    background-size: cover;
+    position: relative;
+    height: 700px;
+} 
+
+.hero-info {
+    position: absolute;
+    width: 100%;
+    padding: .5rem 1rem;
+    bottom: 10px;
+    min-height: 50px;
+}
+
+
+.footer-content {
+    position: absolute;
+    bottom: 10px;
+    
+}
+
+@media (max-width: 575.98px) { ... }
+
+@media (max-width: 767.98px) { ... }
+
+@media (max-width: 991.98px) { 
+    #hero {
+        max-height: unset;
+    }
+    .hero-bg {
+        background-image: none;
+        height: 400px;
+    }
+    .navbar {
+        position: relative;
+    }
+}
+
+@media (max-width: 1199.98px) { 
+    .display-2 {
+        font-size: 4rem;
+    }
+}
